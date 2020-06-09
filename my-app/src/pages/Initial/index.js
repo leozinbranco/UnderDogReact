@@ -81,15 +81,19 @@ export default function Initial() {
                     <div className="btn-logo-container">
                         <button type="submit" className="header-button">Inscreva-se</button>
                     </div>
+                    <div className="under-dog-container">
+                            <img ></img>
+                            <a>Under Dog Gaming</a>
+                    </div>
                     <div className="icons-container"> 
                         <a href="https://www.facebook.com/" target="_blank" >
-                        < Icon  icon = {facebookIcon} color="#000" width="9vh" height="3.9vh" className="testeIcon"/>
+                        < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
                         </a>
                         <a href="https://www.twitter.com/"  target="_blank">
-                        < Icon  icon = {twitterIcon} color="#000" width="9vh" height="3.9vh"/>
+                        < Icon  icon = {twitterIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
                         </a>
                         <a href="https://www.twitch.tv/"  target="_blank">
-                        < Icon  icon = {twitchIcon} color="#000" width="9vh" height="3.9vh"/>
+                        < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
                         </a>
                     </div>
                         
