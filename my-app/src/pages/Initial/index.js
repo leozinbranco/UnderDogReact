@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import twitchIcon from '@iconify/icons-mdi/twitch';
 import twitterIcon from '@iconify/icons-mdi/twitter';
 import facebookIcon from '@iconify/icons-cib/facebook';
+import udgEdited from '../../assets/UDGedited.png';
 //import Button from '@material-ui/core/Button';
 //import { makeStyles } from '@material-ui/core/styles';
 //import { Link, useHistory } from 'react-router-dom'
@@ -82,17 +83,20 @@ export default function Initial() {
                         <button type="submit" className="header-button">Inscreva-se</button>
                     </div>
                     <div className="under-dog-container">
-                            <img ></img>
-                            <a>Under Dog Gaming</a>
+                            
+                            
+                            <img alt="Logo" src={udgEdited}/>
+                            Underdog Gaming
+                            
                     </div>
                     <div className="icons-container"> 
-                        <a href="https://www.facebook.com/" target="_blank" >
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                         < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
                         </a>
-                        <a href="https://www.twitter.com/"  target="_blank">
+                        <a href="https://www.twitter.com/"  target="_blank" rel="noopener noreferrer">
                         < Icon  icon = {twitterIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
                         </a>
-                        <a href="https://www.twitch.tv/"  target="_blank">
+                        <a href="https://www.twitch.tv/"  target="_blank" rel="noopener noreferrer">
                         < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
                         </a>
                     </div>
