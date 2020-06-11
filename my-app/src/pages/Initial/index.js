@@ -138,27 +138,88 @@ export default function Initial() {
                 </div>
 
                 <div className="white-container">
-                    <div className="grey-container">
-                        lalalalalal
-                    </div>
-                    <div className="grey-container">
-                    lalalalalal
-                    </div>
-                    <div className="grey-container">
-                    lalalalalal
-                    </div>
+
+                    <p className="gray-top-text">
+                    O campeonato acontecerá entre os dias 00/00 e 00/00 seguindo às seguintes etapas:
+                    </p>
+                    <section className="anchor-container">
+
+                        <div className="etapa-container">
+                            <p className="text-etapas-container">
+                            1ª Etapa 
+                            </p>
+
+                            <div className="grey-container">
+                            A primeira etapa será composta de confrontos direto no formato de mata-mata e melhor de
+                            um jogo, até chegarmos nos 8 melhores times.
+        
+                            </div>
+                        </div>
+                            
+                                        
+                                        
+                                        
+                        <div className="etapa-container">
+                            <p className="text-etapas-container">
+                            2ª Etapa 
+                            </p>
+
+                            <div className="grey-container">
+                            Os 8 times serão
+                            divididos entre grupo A e grupo B, onde terão jogos de ida e volta com os outros times da
+                            chave, totalizando um total de 6 jogos por time.
+                            </div>
+                        </div>               
+                            
+
+                                        
+                        <div className="etapa-container">
+                            <p className="text-etapas-container">
+                            3ª Etapa 
+                            </p>
+                            <div className="grey-container">
+                            lalalalalal
+                            </div>
+                        </div>        
+                            
+
+                    </section>
+
+                    
+                    
+                    
+                    
 
                 </div>
 
                 
                 <div className="white-container">
+                        <p className="title-p">
+                            Campeonato UDG
+                            
+                        </p>
 
+                        <p className="text-p">
+                        A Underdog Gaming (UDG) é uma organização de e-sports que valoriza o cenário brasileiro e seu futuro,
+                        sabemos que em um momento atual não é tão simples conseguir visibilidade e oportunidades, porém também
+                        sabemos que existem vários potenciais latentes dentro do cenário, desde jogadores que precisam ser lapidados
+                        até coaches, analistas e casters que vagam pelo anonimato.<br></br>
+                        Como consequência desses fatos e buscando um método
+                        para poder aproveitar todo esse potencial, nós, da Underdog Gaming, estaremos patrocinando a “Primeira Edição
+                        do Campeonato UDG de League of Legends”. Nosso propósito será de prover um campeonato competitivo para dar
+                        visibilidade aos mais diversos jogadores e coaches que se encontram pelo cenário e também fermentar o 
+                        cenário com uma proposta inovadora para aqueles que almejam em ser casters ou criadores de conteúdo.<br></br>
+                        Se nossos
+                        ideais e propósitos compactuam com alguma de suas ideias deem uma checada no que temos a falar nos tópicos abaixo,
+                        onde explicaremos um pouco mais detalhadamente o que temos em mente e também como rolará o campeonato.
+                        </p>
+                        
 
                 </div>
 
                 
                 <div className="white-container">
-
+                Você pode se inscrever em qualquer modalidade!!
 
                 </div>
             
