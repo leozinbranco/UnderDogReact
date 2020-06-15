@@ -6,6 +6,8 @@ import twitterIcon from '@iconify/icons-mdi/twitter';
 import facebookIcon from '@iconify/icons-cib/facebook';
 import udgEdited from '../../assets/UDGedited.png';
 import { Tab, Tabs }from '@material-ui/core';
+
+
 /*import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';*/
 import SwipeableViews from 'react-swipeable-views';
@@ -14,6 +16,11 @@ import SwipeableViews from 'react-swipeable-views';
 //import { Link, useHistory } from 'react-router-dom'
 //import api from '../../services/api'; //api
 /**/
+var Scroll   = require('react-scroll');
+var Element  = Scroll.Element;
+var scroller = Scroll.scroller;
+var scroll    = Scroll.animateScroll;
+
 
         const styles = {
             tabs: {
@@ -32,6 +39,15 @@ class Initial extends React.Component  {
 
         state = {
             index: 0,
+            visible: false,
+        };
+
+        show() {
+            this.setState({ visible: true });
+        };
+    
+        hide() {
+            this.setState({ visible: false });
         };
         
         handleChange = (event, value) => {
@@ -45,6 +61,19 @@ class Initial extends React.Component  {
             index,
         });
         };
+
+        scrollToTop = () => {
+            scroll.scrollToTop();
+          }
+        scrollTo = (e, offset) => {
+            scroller.scrollTo(e, {
+                
+                duration: 1500,
+                delay: 100,
+                smooth: true,
+                offset: offset,
+                });
+        };
         
         render() {
 
@@ -57,13 +86,14 @@ class Initial extends React.Component  {
                         <div className="header-container">
                             <header>
                                 <div className="btn-logo-container">
-                                    <button type="submit" className="header-button">Inscreva-se</button>
+                                    <button type="submit" className="header-button" onClick={ () => this.scrollTo("form_element", 35)}>Inscreva-se</button>
+
                                 </div>
                                 <div className="under-dog-container">
                                         
                                         
                                         <img alt="Logo" src={udgEdited}/>
-                                        Underdog Gaming
+                                        <a onClick={this.scrollToTop}  >Underdog Gaming </a>
                                         
                                 </div>
                                 <div className="icons-container"> 
@@ -110,12 +140,12 @@ class Initial extends React.Component  {
                                     competitivo para dar visibilidade aos mais diversos jogadores e coaches que se encontram pelo cenário.
                                     </p>
                                 </div>
-                                    
-                                    <button type="submit"  className="btnTeste"> Como funciona? </button>              
+                                
+                                    <button type="submit"  className="btnTeste" onClick={ () => this.scrollTo("how_element", -50)}> Como funciona? </button>              
                             </div>
 
                             <div className="white-container">
-
+                            <Element name="how_element"> </Element>
                                 <p className="gray-top-text">
                                 O campeonato acontecerá entre os dias 00/00 e 00/00 seguindo às seguintes etapas:
                                 </p>
@@ -132,7 +162,7 @@ class Initial extends React.Component  {
                                         <div className="grey-container" style={Object.assign({}, styles.slide)} >
                                         A primeira etapa será composta de confrontos direto no formato de mata-mata e melhor de
                                         um jogo, até chegarmos nos 8 melhores times.
-                    
+                                        
                                         </div>
 
 
@@ -144,60 +174,52 @@ class Initial extends React.Component  {
                                         chave, totalizando um total de 6 jogos por time.
                                         </div>
 
-
                                         <div className="grey-container" style={Object.assign({}, styles.slide)} >
                                         lalalalalal
                                         </div>
             
 
                                     </SwipeableViews>         
-
+                                    <Element name="form_element"> </Element>
                                 </section>
-
+                                
                                 
                                 
                                 
                                 
 
                             </div>
-
+                            
+                            
                             <div className="white-container"> 
                             
-
-                            </div>
-
                             
-                            <div className="white-container">
-                                    <p className="title-p">
-                                        Campeonato UDG
-                                        
-                                    </p>
-
-                                    <p className="text-p">
-                                    A Underdog Gaming (UDG) é uma organização de e-sports que valoriza o cenário brasileiro e seu futuro,
-                                    sabemos que em um momento atual não é tão simples conseguir visibilidade e oportunidades, porém também
-                                    sabemos que existem vários potenciais latentes dentro do cenário, desde jogadores que precisam ser lapidados
-                                    até coaches, analistas e casters que vagam pelo anonimato.<br></br>
-                                    Como consequência desses fatos e buscando um método
-                                    para poder aproveitar todo esse potencial, nós, da Underdog Gaming, estaremos patrocinando a “Primeira Edição
-                                    do Campeonato UDG de League of Legends”. Nosso propósito será de prover um campeonato competitivo para dar
-                                    visibilidade aos mais diversos jogadores e coaches que se encontram pelo cenário e também fermentar o 
-                                    cenário com uma proposta inovadora para aqueles que almejam em ser casters ou criadores de conteúdo.<br></br>
-                                    Se nossos
-                                    ideais e propósitos compactuam com alguma de suas ideias deem uma checada no que temos a falar nos tópicos abaixo,
-                                    onde explicaremos um pouco mais detalhadamente o que temos em mente e também como rolará o campeonato.
-                                    </p>
+                                <p className="form-title-container">Você pode se inscrever em qualquer modalidade!!</p>
+                                <div className="form-container">
                                     
+                                        <div className="time-container"> 
+                                        <p>Se você tem um time, queremos te conhecer. Preencha nosso formulário. </p>
+
+                                        <button className="btnTeste" type="button" onClick={(e) => {e.preventDefault(); window.open('https://forms.gle/XK8p9zs6Awe1w87K6', "_blank");}}>Inscrever Time </button>
+                                                                                
+                                        
+                                        </div>
+                                        
+                                    <div className="caster-container">
+                                        <p> Se você é narrador, comentarista ou analista de jogo, queremos saber mais sobre você. Preencha nosso formulário.</p>
+                                        
+                                        <button className="btnTeste" type="button"   onClick={(e) => {e.preventDefault(); window.open('https://forms.gle/5m7iXiQzz5BPpzzA9', "_blank");}}>Inscrever Caster</button>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                
 
                             </div>
 
-                            
-                            <div className="white-container">
-                            Você pode se inscrever em qualquer modalidade!!
-
+                            <div className="contacts-container">
+                                    asdasdasd
                             </div>
-                        
-                        
 
                     
                     </div>
