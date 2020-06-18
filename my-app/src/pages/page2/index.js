@@ -5,11 +5,7 @@ import twitchIcon from '@iconify/icons-mdi/twitch';
 import twitterIcon from '@iconify/icons-mdi/twitter';
 import facebookIcon from '@iconify/icons-cib/facebook';
 import udgEdited from '../../assets/UDGedited.png';
-import { Tab, Tabs, Button }from '@material-ui/core';
-import Dropdown from 'rc-dropdown';
-import Menu, { Item as MenuItem, Divider } from 'rc-menu';
-import Ripples from 'react-ripples';
-import 'rc-dropdown/assets/index.css';
+import { Tab, Tabs }from '@material-ui/core';
 
 
 /*import MenuItem from '@material-ui/core/MenuItem';
@@ -37,23 +33,6 @@ var scroll    = Scroll.animateScroll;
             color: '#000',
             },
         };
-
-        const menu = (
-            <Menu onSelect={onSelect}>
-            <MenuItem disabled>disabled</MenuItem>
-            <MenuItem key="1">one</MenuItem>
-            <Divider />
-            <MenuItem key="2">two</MenuItem>
-            </Menu>
-        );
-
-        function onSelect({ key }) {
-            console.log(`${key} selected`);
-        }
-        function onVisibleChange(visible) {
-            console.log(visible);
-        }
-        
 
 
 class Initial extends React.Component  {
@@ -85,7 +64,7 @@ class Initial extends React.Component  {
 
         scrollToTop = () => {
             scroll.scrollToTop();
-        }
+          }
         scrollTo = (e, offset) => {
             scroller.scrollTo(e, {
                 
@@ -95,7 +74,6 @@ class Initial extends React.Component  {
                 offset: offset,
                 });
         };
-
         
         render() {
 
@@ -107,32 +85,13 @@ class Initial extends React.Component  {
                         <div className="initial-container" >
                         <div className="header-container">
                             <header>
-                                
-                            
-                                <div className="dropdown-container">
-                                
-
-                                </div>
-
                                 <div className="btn-logo-container">
                                     <button type="submit" className="header-button" onClick={ () => this.scrollTo("form_element", 35)}>Inscreva-se</button>
 
                                 </div>
-
-                                <Dropdown
-                                trigger={['click']}
-                                overlay={menu}
-                                animation="slide-up"
-                                onVisibleChange={onVisibleChange}
-                                >
-                                    <Ripples>
-                                        <Button variant="contained" color="primary" size="medium">Teste</Button>
-                                    </Ripples>
-                                </Dropdown>
-                                
-
-
                                 <div className="under-dog-container">
+                                        
+                                        
                                         <img alt="Logo" src={udgEdited}/>
                                         <p onClick={this.scrollToTop} >Underdog Gaming </p>
                                         
@@ -154,12 +113,8 @@ class Initial extends React.Component  {
                                 
                                 
                             </header> 
-
-                            
                         </div>  
-
-
-                                
+                        
                 
 
                         

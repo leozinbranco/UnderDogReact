@@ -164,6 +164,8 @@
     position: absolute;
     width: 10%;
     height: 50%;
+    left: 2%;
+    top: 21%;
     
     font-style: normal;
     font-weight: normal;
@@ -180,7 +182,6 @@
     font-family: 'Share', cursive;;
     
     cursor:pointer;
-    
 
     transition: all 0.7s ease;    
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
@@ -229,13 +230,13 @@ body{
     text-align: center;
     min-height: 6vh;
     background: #212121;
-    max-width: 100%;
+    width: 100%;
     padding-right: 0;
     align-items: center;
     display: flex;
 
 }
-
+ 
 
 
 
@@ -354,19 +355,8 @@ body{
     left: 37%;
     margin: 0 auto;
     padding: 0 ;
-    display: flex;
-    flex-direction: row;
     
 }
-
-.dropdown-container{
-    position: absolute;
-    left: 20%;
-    display: flex;
-    flex-direction: row;
-}
-
-
 @media (max-width: 400px) {
     .initial-container{
         width: 310vw;
@@ -388,10 +378,6 @@ body{
     .caster-container button{
         font-size: 27px;
     }
-
-    .icons-container{
-    }
-    
 
 
     
