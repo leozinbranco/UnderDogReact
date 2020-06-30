@@ -5,10 +5,10 @@ import twitchIcon from '@iconify/icons-mdi/twitch';
 import twitterIcon from '@iconify/icons-mdi/twitter';
 import facebookIcon from '@iconify/icons-cib/facebook';
 import udgEdited from '../../assets/UDGedited.png';
-import { Tab, Tabs, Button }from '@material-ui/core';
+import { Tab, Tabs}from '@material-ui/core';
 import ComponentMenu from '../../Components/Drawer';
 import HamburgerMenu from 'react-hamburger-menu';
-import { Grid, Cell } from 'baseui/layout-grid';
+//import { Grid, Cell } from 'baseui/layout-grid';
 
 
 
@@ -41,14 +41,14 @@ var scroll    = Scroll.animateScroll;
             <Divider />
             <MenuItem key="2">two</MenuItem>
             </Menu>
-        );*/
+        );
 
         function onSelect({ key }) {
             console.log(`${key} selected`);
         }
         function onVisibleChange(visible) {
             console.log(visible);
-        }
+        }*/
         
 
 
