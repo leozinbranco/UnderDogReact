@@ -6,20 +6,16 @@ import twitterIcon from '@iconify/icons-mdi/twitter';
 import facebookIcon from '@iconify/icons-cib/facebook';
 import udgEdited from '../../assets/UDGedited.png';
 import { Tab, Tabs, Button }from '@material-ui/core';
-import Dropdown from 'rc-dropdown';
-import Menu, { Item as MenuItem, Divider } from 'rc-menu';
-import Ripples from 'react-ripples';
-import 'rc-dropdown/assets/index.css';
+import ComponentMenu from '../../Components/Drawer';
+import HamburgerMenu from 'react-hamburger-menu';
+import { Grid, Cell } from 'baseui/layout-grid';
 
 
-/*import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';*/
+
+
 import SwipeableViews from 'react-swipeable-views';
-//import Button from '@material-ui/core/Button';
-//import { makeStyles } from '@material-ui/core/styles';
-//import { Link, useHistory } from 'react-router-dom'
-//import api from '../../services/api'; //api
-/**/
+
+
 var Scroll   = require('react-scroll');
 var Element  = Scroll.Element;
 var scroller = Scroll.scroller;
@@ -38,14 +34,14 @@ var scroll    = Scroll.animateScroll;
             },
         };
 
-        const menu = (
+        /*const menu = (
             <Menu onSelect={onSelect}>
             <MenuItem disabled>disabled</MenuItem>
             <MenuItem key="1">one</MenuItem>
             <Divider />
             <MenuItem key="2">two</MenuItem>
             </Menu>
-        );
+        );*/
 
         function onSelect({ key }) {
             console.log(`${key} selected`);
@@ -63,13 +59,13 @@ class Initial extends React.Component  {
             visible: false,
         };
 
-        show() {
+        /*show() {
             this.setState({ visible: true });
         };
     
         hide() {
             this.setState({ visible: false });
-        };
+        };*/
         
         handleChange = (event, value) => {
         this.setState({
@@ -97,17 +93,44 @@ class Initial extends React.Component  {
         };
 
         
+
+        handleClick() {
+            this.setState({
+                open: !this.state.open
+            });
+        }
+
+        
         render() {
 
             const { index } = this.state; 
 
             return (
                         /**/
-
+                    
                         <div className="initial-container" >
+                            
                         <div className="header-container">
+                            
+
+                                    
                             <header>
-                                
+                            
+                            <ComponentMenu open={this.state.open} handler={this.handleClick.bind(this)} />
+                            <HamburgerMenu
+                                isOpen={this.state.open}
+                                menuClicked={this.handleClick.bind(this)}
+                                width={30}
+                                height={27}
+                                strokeWidth={3}
+                                rotate={0}
+                                color='white'
+                                borderRadius={3}
+                                animationDuration={0.5}
+                                className="hamburguer-icon"
+                            />
+                            
+
                             
                                 <div className="dropdown-container">
                                 
@@ -119,16 +142,7 @@ class Initial extends React.Component  {
 
                                 </div>
 
-                                <Dropdown
-                                trigger={['click']}
-                                overlay={menu}
-                                animation="slide-up"
-                                onVisibleChange={onVisibleChange}
-                                >
-                                    <Ripples>
-                                        <Button variant="contained" color="primary" size="medium">Teste</Button>
-                                    </Ripples>
-                                </Dropdown>
+                                
                                 
 
 
@@ -163,32 +177,32 @@ class Initial extends React.Component  {
                 
 
                         
-                            <div className="white-container">
-                                <div className="text-container">
-                                    <p className="title-p">
-                                        Campeonato Underdog Gaming
-                                        <br></br> League of Legends 
-                                    </p>
-                                    <p className="text-p">
-                                    A Underdog Gaming (UDG) é uma organização de e-sports que valoriza o cenário brasileiro e seu futuro, 
-                                    sabemos que em um momento atual não é tão simples conseguir visibilidade e oportunidades, porém também
-                                    sabemos que existem vários potenciais latentes dentro do cenário, desde jogadores que precisam ser 
-                                    lapidados até coaches, analistas e casters que vagam pelo anonimato.
+                                <div className="white-container">
+                                    <div className="text-container">
+                                        <p className="title-p">
+                                            Campeonato Underdog Gaming
+                                            <br></br> League of Legends 
+                                        </p>
+                                        <p className="text-p">
+                                        A Underdog Gaming (UDG) é uma organização de e-sports que valoriza o cenário brasileiro e seu futuro, 
+                                        sabemos que em um momento atual não é tão simples conseguir visibilidade e oportunidades, porém também
+                                        sabemos que existem vários potenciais latentes dentro do cenário, desde jogadores que precisam ser 
+                                        lapidados até coaches, analistas e casters que vagam pelo anonimato.
+                                        
+                                        <br>
+                                        
+                                        </br><br>
+                                        
+                                        </br> Como consequência desses fatos e
+                                        buscando um método para poder aproveitar todo esse potencial, nós, da Underdog Gaming, estaremos patrocinando
+                                        a “Primeira Edição do Campeonato UDG de League of Legends”. Nosso propósito será de prover um campeonato 
+                                        competitivo para dar visibilidade aos mais diversos jogadores e coaches que se encontram pelo cenário.
+                                        </p>
+                                    </div>
                                     
-                                    <br>
-                                    
-                                    </br><br>
-                                    
-                                    </br> Como consequência desses fatos e
-                                    buscando um método para poder aproveitar todo esse potencial, nós, da Underdog Gaming, estaremos patrocinando
-                                    a “Primeira Edição do Campeonato UDG de League of Legends”. Nosso propósito será de prover um campeonato 
-                                    competitivo para dar visibilidade aos mais diversos jogadores e coaches que se encontram pelo cenário.
-                                    </p>
+                                        <button type="submit"  className="btnTeste" onClick={ () => this.scrollTo("how_element", -50)}> Como funciona? </button>              
                                 </div>
-                                
-                                    <button type="submit"  className="btnTeste" onClick={ () => this.scrollTo("how_element", -50)}> Como funciona? </button>              
-                            </div>
-
+                            
                             <div className="white-container">
                             <Element name="how_element"> </Element>
                                 <p className="gray-top-text">
@@ -197,10 +211,10 @@ class Initial extends React.Component  {
                                 
                                 <section className="anchor-container">
 
-                                    <Tabs value={index} centered onChange={this.handleChange}  style={styles.tabs} TabIndicatorProps={{style: {background:'#000'}}}>
-                                        <Tab label="1ª Etapa" style={{width:'100%', fontSize: 30}}/>
-                                        <Tab label="2ª Etapa" style={{width:'100%', fontSize: 30}}/>
-                                        <Tab label="3ª Etapa" style={{width:'100%', fontSize: 30}}/>
+                                    <Tabs value={index} centered onChange={this.handleChange}  style={styles.tabs} TabIndicatorProps={{style: {background:'#FFFFFF'}}}>
+                                        <Tab label="1ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
+                                        <Tab label="2ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
+                                        <Tab label="3ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
                                     </Tabs>
                                         <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
 
@@ -209,10 +223,6 @@ class Initial extends React.Component  {
                                         um jogo, até chegarmos nos 8 melhores times.
                                         
                                         </div>
-
-
-
-
                                         <div className="grey-container" style={Object.assign({}, styles.slide)} >
                                         Os 8 times serão
                                         divididos entre grupo A e grupo B, onde terão jogos de ida e volta com os outros times da
@@ -235,6 +245,7 @@ class Initial extends React.Component  {
 
                             </div>
                             
+
                             
                             <div className="white-container"> 
                             
@@ -262,13 +273,17 @@ class Initial extends React.Component  {
 
                             </div>
 
+
+                        
+
+
                             <div className="contacts-container">
                                     asdasdasd
                             </div>
 
-                    
+                       
                     </div>
-
+                
             
                             
                                 /*

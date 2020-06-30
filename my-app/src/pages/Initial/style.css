@@ -61,6 +61,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .contacts-container{
@@ -86,6 +87,7 @@
     font-size: 24px;
     text-align: center;
     align-self: center;
+    color: #FFFFFF;
 }
 
 .time-container button{
@@ -116,6 +118,7 @@
 .caster-container{
     position: relative;
     width: 50%;
+    color: #FFFFFF;
 }
 .caster-container p{
     position: relative;
@@ -132,6 +135,8 @@
 .btn-logo-container {
     width: 10%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -160,20 +165,26 @@
     height: 3.9vh
 }
 
+.hamburguer-icon{
+    position: relative;
+    left: 100px;
+}
+
 .header-button{
     position: absolute;
-    width: 10%;
-    height: 50%;
+    width: 8%;
+    height: 60%;
     
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
+    left: 11%;
 
     text-align: center;
     align-self: center;
 
     background: #FBFBFB;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     outline: 0;
@@ -216,7 +227,7 @@ body{
     max-width:  100%;
     margin: 0;
     padding: 0 2%;
-    z-index: 9;
+    z-index: 0;
     
 }
 
@@ -245,10 +256,11 @@ body{
 
 .white-container{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(29, 34, 41, 0.85);
     margin: 10vh;
     /*opacity: 0.85;*/
     height: 90vh;
+    z-index:-1;
     
     
 }
@@ -282,6 +294,7 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
+    color: #FFFFFF;
 }
 
 
@@ -290,6 +303,7 @@ body{
     font-size: 24px;
     margin: 2vh;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .grey-container{
@@ -329,22 +343,23 @@ body{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    color: #FFFFFF;
 }
 
 .text-p{  /*Texto - Roboto 24px*/
     position: absolute;
-    font-size: 24px;
+    
     font-family: 'Roboto', sans-serif;
     top: 45vh;
     width: 126vh;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-
+    
 
     line-height: 28px;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
     
 
 }
@@ -359,6 +374,11 @@ body{
     
 }
 
+.hamburguer-button{
+    width: 50%;
+    height: 50%;
+}
+
 .dropdown-container{
     position: absolute;
     left: 20%;
@@ -367,96 +387,92 @@ body{
 }
 
 
-@media (max-width: 400px) {
-    .initial-container{
-        width: 310vw;
-        height: 20vh;
-    }
-    .title-p {
-        font-size: 3rem;
-    }
-    .text-p{
-        font-size: 18px;
-        width: 80%;
-    }   
-    body{
-        background-repeat: repeat;
-    }
-    .under-dog-container{
-        font-size: 19px;
-    }
-    .caster-container button{
-        font-size: 27px;
-    }
-
-    .icons-container{
-    }
+/*
+    @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) 
+        .initial-container{
+            width: 310vw;
+            height: 20vh;
+        }
+        .title-p {
+            font-size: 3rem;
+        }
+        .text-p{
+            font-size: 18px;
+            width: 80%;
+        }   
+        body{
+            background-repeat: repeat;
+        }
+        .under-dog-container{
+            font-size: 28px;
+        }
+        .caster-container button{
+            font-size: 27px;
+        }
     
-
-
-    
-
-}
-
-
-@media (min-width: 400px) {
-    body{
-        overflow: scroll;
-        background-repeat: repeat;
-    }
-    .title-p {
-        font-size: 2rem;
-    }
-    .icons-container{
-        width: 50%;
-    }
-    .text-p{
-        font-size: 15px;
-    }   
-    .white-container{
+        .icons-container{
+        }
         
     }
-    .initial-container{
-        width: 270vw;
-        height: 20vh;
+    @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone  
+        body{
+            overflow: scroll;
+            background-repeat: repeat;
+        }
+        .title-p {
+            font-size: 2rem;
+        }
+        .icons-container{
+            width: 50%;
+        }
+        .text-p{
+            font-size: 15px;
+        }   
+        
+        .initial-container{
+            width: 270vw;
+            height: 20vh;
+        }
     }
-}
-
-@media (min-width: 600px) {
-    body{
-        overflow: scroll;
-    }
-
-    .initial-container{
-        width: 200vw;
-    }
-    .title-p {
-        font-size: 3rem;
-    }
-    .text-p{
-        font-size: 25px;
-    }
-}
-
-@media (min-width: 800px) {
-    .title-p {
-    font-size: 45px ;/*7.22vh;*/
-    }
-    .icons-container{
-        width: 25%;
-    }
-    .text-p{
-        font-size: 18px;
-        width: 90%;
-    }
-
-    .initial-container{
-        width: 90%;
-        max-width: 100%;
-    }
-
+    @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) 
+        body{
+            overflow: scroll;
+        }
     
-}
+        .initial-container{
+            width: 200vw;
+        }
+        .title-p {
+            font-size: 2rem;
+        }
+        .text-p{
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops 
+        .title-p {
+            font-size: 60px ;/*7.22vh;
+            }
+            .icons-container{
+                width: 25%;
+            }
+            .text-p{
+                font-size: 30px;
+                width: 90%;
+            }
+        
+            .initial-container{
+                width: 90%;
+                max-width: 100%;
+            }
+    }
+    @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops 
+    }
+    @media (min-width:1281px) { /* hi-res laptops and desktops  
+    
+    }
+*/
 
 
 
