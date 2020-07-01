@@ -274,7 +274,6 @@ class Initial extends React.Component  {
                                     asdasdasd
                             </div>
 
-                       
                         </div>
                     
                 

@@ -205,8 +205,8 @@ body{
     background-size: cover;*/
     background-attachment: fixed, scroll;
     background-repeat: no-repeat, repeat-y;
-    position: relative;
-    height: 90vh;
+    /*position: relative;
+    height: 90vh;*/
     
 }
 
