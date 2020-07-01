@@ -110,67 +110,64 @@ class Initial extends React.Component  {
                     
                         <div className="initial-container" >
                             
-                        <div className="header-container">
-                            
-
-                                    
-                            <header>
-                            
-                            <ComponentMenu open={this.state.open} handler={this.handleClick.bind(this)} />
-                            <HamburgerMenu
-                                isOpen={this.state.open}
-                                menuClicked={this.handleClick.bind(this)}
-                                width={30}
-                                height={27}
-                                strokeWidth={3}
-                                rotate={0}
-                                color='white'
-                                borderRadius={3}
-                                animationDuration={0.5}
-                                className="hamburguer-icon"
-                            />
-                            
-
-                            
-                                <div className="dropdown-container">
+                            <div className="header-container">
                                 
 
-                                </div>
-
-                                <div className="btn-logo-container">
-                                    <button type="submit" className="header-button" onClick={ () => this.scrollTo("form_element", 35)}>Inscreva-se</button>
-
-                                </div>
-
-                                
-                                
-
-
-                                <div className="under-dog-container">
-                                        <img alt="Logo" src={udgEdited}/>
-                                        <p onClick={this.scrollToTop} >Underdog Gaming </p>
                                         
-                                </div>
-                                <div className="icons-container"> 
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                    < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
-                                    </a>
-                                    <a href="https://www.twitter.com/"  target="_blank" rel="noopener noreferrer">
-                                    < Icon  icon = {twitterIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
-                                    </a>
-                                    <a href="https://www.twitch.tv/"  target="_blank" rel="noopener noreferrer">
-                                    < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
-                                    </a>
-                                </div>
-                                    
+                                <header>
                                 
-                    
+                                <ComponentMenu open={this.state.open} handler={this.handleClick.bind(this)} />
+                                <HamburgerMenu
+                                    isOpen={this.state.open}
+                                    menuClicked={this.handleClick.bind(this)}
+                                    width={30}
+                                    height={27}
+                                    strokeWidth={3}
+                                    rotate={0}
+                                    color='white'
+                                    borderRadius={3}
+                                    animationDuration={0.5}
+                                    className="hamburguer-icon"/>
                                 
                                 
-                            </header> 
 
-                            
-                        </div>  
+                                
+
+                                    <div className="btn-logo-container">
+                                        <button type="submit" className="header-button" onClick={ () => this.scrollTo("form_element", 35)}>Inscreva-se</button>
+
+                                    </div>
+
+                                    
+                                    
+
+
+                                    <div className="under-dog-container">
+                                            <img alt="Logo" src={udgEdited}/>
+                                            <p onClick={this.scrollToTop} >Underdog Gaming </p>
+                                            
+                                    </div>
+                                    <div className="icons-container"> 
+                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                        < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
+                                        </a>
+                                        <a href="https://www.twitter.com/"  target="_blank" rel="noopener noreferrer">
+                                        < Icon  icon = {twitterIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
+                                        </a>
+                                        <a href="https://www.twitch.tv/"  target="_blank" rel="noopener noreferrer">
+                                        < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
+                                        </a>
+                                    </div>
+                                        
+                                    
+                        
+                                    
+                                    
+                                </header> 
+
+                                
+                                
+                            </div>
 
 
                                 
@@ -183,6 +180,7 @@ class Initial extends React.Component  {
                                             Campeonato Underdog Gaming
                                             <br></br> League of Legends 
                                         </p>
+                                        
                                         <p className="text-p">
                                         A Underdog Gaming (UDG) é uma organização de e-sports que valoriza o cenário brasileiro e seu futuro, 
                                         sabemos que em um momento atual não é tão simples conseguir visibilidade e oportunidades, porém também
@@ -204,44 +202,39 @@ class Initial extends React.Component  {
                                 </div>
                             
                             <div className="white-container">
-                            <Element name="how_element"> </Element>
-                                <p className="gray-top-text">
-                                O campeonato acontecerá entre os dias 00/00 e 00/00 seguindo às seguintes etapas:
-                                </p>
-                                
-                                <section className="anchor-container">
+                                <Element name="how_element"> </Element>
+                                    <p className="gray-top-text">
+                                    O campeonato acontecerá entre os dias 00/00 e 00/00 seguindo às seguintes etapas:
+                                    </p>
+                                    
+                                    <section className="anchor-container">
 
-                                    <Tabs value={index} centered onChange={this.handleChange}  style={styles.tabs} TabIndicatorProps={{style: {background:'#FFFFFF'}}}>
-                                        <Tab label="1ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
-                                        <Tab label="2ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
-                                        <Tab label="3ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
-                                    </Tabs>
-                                        <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
+                                        <Tabs value={index} centered onChange={this.handleChange}  style={styles.tabs} TabIndicatorProps={{style: {background:'#FFFFFF'}}}>
+                                            <Tab label="1ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
+                                            <Tab label="2ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
+                                            <Tab label="3ª Etapa" style={{width:'100%', fontSize: 30, color: '#FFFFFF'}}/>
+                                        </Tabs>
+                                            <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
 
-                                        <div className="grey-container" style={Object.assign({}, styles.slide)} >
-                                        A primeira etapa será composta de confrontos direto no formato de mata-mata e melhor de
-                                        um jogo, até chegarmos nos 8 melhores times.
-                                        
-                                        </div>
-                                        <div className="grey-container" style={Object.assign({}, styles.slide)} >
-                                        Os 8 times serão
-                                        divididos entre grupo A e grupo B, onde terão jogos de ida e volta com os outros times da
-                                        chave, totalizando um total de 6 jogos por time.
-                                        </div>
+                                            <div className="grey-container" style={Object.assign({}, styles.slide)} >
+                                            A primeira etapa será composta de confrontos direto no formato de mata-mata e melhor de
+                                            um jogo, até chegarmos nos 8 melhores times.
+                                            
+                                            </div>
+                                            <div className="grey-container" style={Object.assign({}, styles.slide)} >
+                                            Os 8 times serão
+                                            divididos entre grupo A e grupo B, onde terão jogos de ida e volta com os outros times da
+                                            chave, totalizando um total de 6 jogos por time.
+                                            </div>
 
-                                        <div className="grey-container" style={Object.assign({}, styles.slide)} >
-                                        lalalalalal
-                                        </div>
-            
+                                            <div className="grey-container" style={Object.assign({}, styles.slide)} >
+                                            lalalalalal
+                                            </div>
+                
 
-                                    </SwipeableViews>         
-                                    <Element name="form_element"> </Element>
+                                        </SwipeableViews>         
+                                        <Element name="form_element"> </Element>
                                 </section>
-                                
-                                
-                                
-                                
-                                
 
                             </div>
                             
@@ -282,7 +275,8 @@ class Initial extends React.Component  {
                             </div>
 
                        
-                    </div>
+                        </div>
+                    
                 
             
                             
@@ -310,7 +304,7 @@ class Initial extends React.Component  {
 
 
             );
-        }
+        };
         
         
 }
