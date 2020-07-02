@@ -8,3 +8,9 @@
     border: 1px solid #ebedf0;
     border-radius: 2px;
     }
+
+@media (min-width:801px) {
+    .site-drawer-render-in-current-wrapper{
+        width: 300px;
+    }
+} 

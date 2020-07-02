@@ -1,0 +1,105 @@
+.header-button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #5B006A;
+    box-shadow: inset 0 0 0 3px #5B006A; 
+    transition: all 0.7s ease;    
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);     
+    
+}
+
+.header-button{
+    position: absolute;
+    width: 8%;
+    height: 60%;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    left: 11%;
+
+    text-align: center;
+    align-self: center;
+
+    background: #FBFBFB;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    outline: 0;
+    font-family: 'Share', cursive;;
+    
+    cursor:pointer;
+    
+
+    transition: all 0.7s ease;    
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container{
+    position: relative;
+    max-width:  100%;
+    margin: 0;
+    padding: 0 2%;
+    z-index: 0;
+    
+}
+
+.initial-container header{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    min-height: 6vh;
+    background: #212121;
+    max-width: 100%;
+    padding-right: 0;
+    align-items: center;
+    display: flex;
+
+}
+
+@media (max-width:320px) {
+    .header-button{
+        width: 5%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width:320px) {
+    .header-button{
+        width: 12%;
+        
+    }
+
+
+}
+
+@media (min-width:600px) {
+    .header-button{
+        width: 10%;
+        
+    }
+
+}
+
+@media (min-width:801px) {
+    .header-button{
+        width: 10%;
+        font-size: 30px;
+    }
+}
+@media (min-width:801px) and (orientation: landscape){
+    .initial-container header{
+        height: 5%;
+    }
+}
+@media (min-width:1025px) { 
+
+    .header-button{
+        width: 9%;
+        font-size: 20px;
+    }
+}
+
+

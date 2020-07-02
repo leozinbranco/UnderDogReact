@@ -1,15 +1,9 @@
 import './style.css';
 import React/*, {useState}*/ from 'react';
-import { Icon } from "@iconify/react";
-import twitchIcon from '@iconify/icons-mdi/twitch';
-import twitterIcon from '@iconify/icons-mdi/twitter';
-import facebookIcon from '@iconify/icons-cib/facebook';
-import udgEdited from '../../assets/UDGedited.png';
 import { Tab, Tabs}from '@material-ui/core';
-import ComponentMenu from '../../Components/Drawer';
-import HamburgerMenu from 'react-hamburger-menu';
-//import { Grid, Cell } from 'baseui/layout-grid';
-
+import Header from '../../Components/Header';
+import { Grid, Cell, BEHAVIOR } from 'baseui/layout-grid';
+import StickyFooter from 'react-sticky-footer';
 
 
 
@@ -19,7 +13,8 @@ import SwipeableViews from 'react-swipeable-views';
 var Scroll   = require('react-scroll');
 var Element  = Scroll.Element;
 var scroller = Scroll.scroller;
-var scroll    = Scroll.animateScroll;
+
+
 
 
         const styles = {
@@ -54,11 +49,18 @@ var scroll    = Scroll.animateScroll;
 
 class Initial extends React.Component  {
 
-        state = {
-            index: 0,
-            visible: false,
-        };
+        constructor(props) {
+            super(props);
+            this.state = {
+                index: 0,
+                visible: false,
+                
+            };
+        }
 
+        
+
+        
         /*show() {
             this.setState({ visible: true });
         };
@@ -66,7 +68,10 @@ class Initial extends React.Component  {
         hide() {
             this.setState({ visible: false });
         };*/
-        
+        componentWillMount(){
+            //this.setState({height: window.innerHeight + 'px'});
+        }
+
         handleChange = (event, value) => {
         this.setState({
             index: value,
@@ -79,9 +84,6 @@ class Initial extends React.Component  {
         });
         };
 
-        scrollToTop = () => {
-            scroll.scrollToTop();
-        }
         scrollTo = (e, offset) => {
             scroller.scrollTo(e, {
                 
@@ -94,11 +96,6 @@ class Initial extends React.Component  {
 
         
 
-        handleClick() {
-            this.setState({
-                open: !this.state.open
-            });
-        }
 
         
         render() {
@@ -107,74 +104,15 @@ class Initial extends React.Component  {
 
             return (
                         /**/
-                    
+                    <Grid behavior={BEHAVIOR.fluid}>
+
                         <div className="initial-container" >
                             
-                            <div className="header-container">
+                            <Header/>
+
+                            <div className="white-container">
+                                <Cell span={[ 4, 8, 12]}>
                                 
-
-                                        
-                                <header>
-                                
-                                <ComponentMenu open={this.state.open} handler={this.handleClick.bind(this)} />
-                                <HamburgerMenu
-                                    isOpen={this.state.open}
-                                    menuClicked={this.handleClick.bind(this)}
-                                    width={30}
-                                    height={27}
-                                    strokeWidth={3}
-                                    rotate={0}
-                                    color='white'
-                                    borderRadius={3}
-                                    animationDuration={0.5}
-                                    className="hamburguer-icon"/>
-                                
-                                
-
-                                
-
-                                    <div className="btn-logo-container">
-                                        <button type="submit" className="header-button" onClick={ () => this.scrollTo("form_element", 35)}>Inscreva-se</button>
-
-                                    </div>
-
-                                    
-                                    
-
-
-                                    <div className="under-dog-container">
-                                            <img alt="Logo" src={udgEdited}/>
-                                            <p onClick={this.scrollToTop} >Underdog Gaming </p>
-                                            
-                                    </div>
-                                    <div className="icons-container"> 
-                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
-                                        </a>
-                                        <a href="https://www.twitter.com/"  target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {twitterIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
-                                        </a>
-                                        <a href="https://www.twitch.tv/"  target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
-                                        </a>
-                                    </div>
-                                        
-                                    
-                        
-                                    
-                                    
-                                </header> 
-
-                                
-                                
-                            </div>
-
-
-                                
-                
-
-                        
-                                <div className="white-container">
                                     <div className="text-container">
                                         <p className="title-p">
                                             Campeonato Underdog Gaming
@@ -199,9 +137,15 @@ class Initial extends React.Component  {
                                     </div>
                                     
                                         <button type="submit"  className="btnTeste" onClick={ () => this.scrollTo("how_element", -50)}> Como funciona? </button>              
-                                </div>
+                                
+                            </Cell>
+                            </div>
+
+                            
+
                             
                             <div className="white-container">
+                                <Cell span={[ 4, 8, 12]}>
                                 <Element name="how_element"> </Element>
                                     <p className="gray-top-text">
                                     O campeonato acontecerá entre os dias 00/00 e 00/00 seguindo às seguintes etapas:
@@ -236,12 +180,13 @@ class Initial extends React.Component  {
                                         <Element name="form_element"> </Element>
                                 </section>
 
+                            </Cell>
                             </div>
                             
 
                             
                             <div className="white-container"> 
-                            
+                            <Cell span={[4, 8, 12]}>
                             
                                 <p className="form-title-container">Você pode se inscrever em qualquer modalidade!!</p>
                                 <div className="form-container">
@@ -262,21 +207,30 @@ class Initial extends React.Component  {
                                         
                                     </div>
                                 </div>
-                                
 
+                            </Cell>
                             </div>
-
-
                         
 
-
-                            <div className="contacts-container">
-                                    asdasdasd
-                            </div>
-
+                            
+                                    <StickyFooter
+                                        bottomThreshold={50}
+                                        normalStyles={{
+                                        backgroundColor: "#999999",
+                                        padding: "2rem"
+                                        }}
+                                        stickyStyles={{
+                                        backgroundColor: "rgba(255,255,255,.8)",
+                                        padding: "2rem"
+                                        }}
+                                    >
+                                    </StickyFooter>
+                            
+                        
+                                
                         </div>
-                    
-                
+                    </Grid>
+                        
             
                             
                                 /*
