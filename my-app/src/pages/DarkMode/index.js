@@ -1,4 +1,4 @@
-import './style.css';
+import '../DarkMode/style.css';
 import React/*, {useState}*/ from 'react';
 import { Tab, Tabs}from '@material-ui/core';
 import Header from '../../Components/Header';
