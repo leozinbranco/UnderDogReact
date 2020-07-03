@@ -147,10 +147,13 @@ class Initial extends React.Component  {
                             <div className="white-container">
                                 <Cell span={[ 4, 8, 12]}>
                                 <Element name="how_element"> </Element>
-                                    <p className="gray-top-text">
+
+                                    <div className="gray-top-text" >
+                                    <p>
                                     O campeonato acontecerá entre os dias 00/00 e 00/00 seguindo às seguintes etapas:
                                     </p>
-                                    
+                                    </div>
+
                                     <section className="anchor-container">
 
                                         <Tabs value={index} centered onChange={this.handleChange}  style={styles.tabs} TabIndicatorProps={{style: {background:'#FFFFFF'}}}>

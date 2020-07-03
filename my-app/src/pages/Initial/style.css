@@ -297,6 +297,8 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     display: flex;
+    justify-content: center;
+    margin: auto;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
@@ -392,7 +394,7 @@ body{
 }
 
 
-    @media (max-width:320px) {
+    @media screen and (max-width:320px) {
 
         body{
             background-repeat: repeat;
@@ -406,6 +408,9 @@ body{
         }
         .white-container{
             width: 100%;
+        }
+        .anchor-container{
+            width: 90%;
         }
 
         .title-p {
@@ -443,7 +448,7 @@ body{
         }
     }
 
-    @media  (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    @media screen and  (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
         
         .initial-container{
             width: 100%;
@@ -453,7 +458,8 @@ body{
             font-size: 2.5rem;
         }
         .text-p{
-            font-size: 16px;
+            font-size: 18px;
+            line-height: 20px;
             width: 80%;
         }   
         body{
@@ -462,6 +468,9 @@ body{
         .under-dog-container p{
             font-size: 18px;
             
+        }
+        .anchor-container{
+            width: 90%;
         }
         .caster-container button, .time-container button{
             font-size: 27px;
@@ -478,19 +487,29 @@ body{
             position: relative;
             left: 50px;
         }
+
+        .grey-container{
+            height: 200px;
+        }
         
+        .header-button{
+            font-size: 17px;
+        }
         
         
     
         
     }
-    @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone  */
+    @media screen and (min-width:480px) { /* smartphones, Android phones, landscape iPhone  */
         body{
             overflow: scroll;
             background-repeat: repeat;
         }
         .title-p {
             font-size: 4rem;
+        }
+        .anchor-container{
+            width: 90%;
         }
         .icons-container{
             width: 50%;
@@ -522,7 +541,7 @@ body{
             font-size: 25px;
         }
     }
-    @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    @media screen and  (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
         body{
             overflow: scroll;
         }
@@ -537,7 +556,8 @@ body{
             width: 14%;
         }
         .text-p{
-            font-size: 30px;
+            font-size: 42px;
+            line-height: 40px;
         }   
         
         .gray-top-text{
@@ -562,9 +582,20 @@ body{
             left: 100px;
         }
 
+        .anchor-container{
+            width: 90%;
+        }
+        .btnTeste{
+            font-size: 50px;
+        }
+
+        .header-button{
+            font-size: 30px;
+        }
+ 
     }
 
-    @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    @media screen and  (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
         body{
             overflow: scroll;
         }
@@ -617,6 +648,10 @@ body{
                 font-size: 60px;
             }
 
+            .anchor-container{
+                width: 90%;
+            }
+
             .caster-container button, .time-container button{
                 font-size: 60px;
                 width: 70%;
@@ -624,7 +659,7 @@ body{
             
     }
 
-    @media (min-width:801px) and (orientation: landscape){ /* tablet, landscape iPad, lo-res laptops ands desktops */
+    @media screen and  (min-width:801px) and (orientation: landscape){ /* tablet, landscape iPad, lo-res laptops ands desktops */
         body{
             overflow: scroll;
         }
@@ -673,6 +708,9 @@ body{
                 width: auto;
             }
 
+            .anchor-container{
+                width: 90%;
+            }
             .btnTeste{
                 font-size: 60px;
             }
@@ -683,7 +721,91 @@ body{
             }
             
     }
-    @media only screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+    @media screen and (orientation: landscape){ /* tablet, landscape iPad, lo-res laptops ands desktops */
+        body{
+            overflow: scroll;
+        }
+
+        html{
+            width: 100%;
+        }
+
+    
+        .title-p {
+            font-size: 20px ;/*7.22vh*/;
+            }
+            .icons-container{
+                width: 25%;
+            }
+            .text-p{
+                font-size: 6px;
+                width: 101%;
+                line-height: 20px;
+            }
+        
+            .initial-container{
+                width: 100%;
+            }
+            
+            .initial-container header{
+                height: 40px;
+            }
+
+            .gray-top-text{
+                font-size: 10px;
+            }
+
+            .grey-container{
+                height: 100px;
+                font-size: 15px;
+            }
+
+            .anchor-container{
+                width: 500px;
+            }
+    
+            .form-title-container{
+                font-size: 20px;   
+            }
+    
+            .caster-container p, .time-container p{
+                font-size: 20px;
+                width: 70%;
+            }
+    
+            .under-dog-container, .under-dog-container p{
+                font-size: 10px;
+                width: auto;
+            }
+
+            .btnTeste{
+                font-size: 10px;
+                text-align: center;
+            }
+
+            .caster-container button, .time-container button{
+                font-size: 20px;
+                width: 70%;
+            }
+
+            .hamburguer-icon{
+                left: 10px;
+                
+            }
+            .anchor-container{
+                width: 90%;
+            }
+       
+
+
+            .header-button{
+                font-size: 10px;
+            }
+            
+    }
+
+    @media screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
         html{
             width: 100%;
         }
@@ -710,8 +832,12 @@ body{
             }
 
             .grey-container{
-                height: 350px;
+                height: 250px;
                 font-size: 36px;
+            }
+
+            .anchor-container{
+                width: 90%;
             }
     
             .form-title-container{
@@ -741,10 +867,14 @@ body{
                 left: 50px;
             }
 
+            .header-button{
+                font-size: 18px;
+            }
+
             
     }
 
-    @media (min-width:1281px) { 
+    @media screen and (min-width:1281px) { 
         html{
             width: 100%;
         }
@@ -764,7 +894,10 @@ body{
             .initial-container{
                 width: 100%;
             }
-
+            
+            .anchor-container{
+                width: 90%;
+            }
             
             .gray-top-text{
                 font-size: 25px;
@@ -801,7 +934,78 @@ body{
             .hamburguer-icon{
                 left: 70px;
             }
-    }
+
+            .header-button{
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (min-width:2000px) { 
+            html{
+                width: 100%;
+            }
+    
+            .title-p {
+                font-size: 5rem ;/*7.22vh*/;
+                }
+                .icons-container{
+                    width: 25%;
+                }
+                .text-p{
+                    font-size: 50px;
+                    width: 90%;
+                    line-height: 50px;
+                }
+            
+                .initial-container{
+                    width: 100%;
+                }
+    
+                
+                .gray-top-text{
+                    font-size: 50px;
+                    
+                    
+                }
+    
+                .grey-container{
+                    height: 500px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+        
+                .form-title-container{
+                    font-size: 50px;   
+                }
+        
+                .caster-container p, .time-container p{
+                    font-size: 50px;
+                    width: 70%;
+                }
+        
+                .under-dog-container, .under-dog-container p{
+                    font-size: 30px;
+                    width: auto;
+                }
+    
+                .btnTeste{
+                    font-size: 50px;
+                }
+    
+                .caster-container button, .time-container button{
+                    font-size: 50px;
+                    width: 70%;
+                }
+    
+                .hamburguer-icon{
+                    left: 110px;
+                }
+    
+                .header-button{
+                    font-size: 35px;
+                }
+            }
+
   
 
 
