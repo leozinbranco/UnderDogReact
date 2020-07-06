@@ -3,7 +3,7 @@ import React/*, {useState}*/ from 'react';
 import { Tab, Tabs}from '@material-ui/core';
 import Header from '../../Components/Header';
 import { Grid, Cell, BEHAVIOR } from 'baseui/layout-grid';
-import StickyFooter from 'react-sticky-footer';
+import Footer from '../../Components/Footer';
 
 
 
@@ -105,7 +105,7 @@ class Initial extends React.Component  {
             return (
                         /**/
                     <Grid behavior={BEHAVIOR.fluid}>
-
+                    
                         <div className="initial-container" >
                             
                             <Header/>
@@ -216,22 +216,17 @@ class Initial extends React.Component  {
                         
 
                             
-                                    <StickyFooter
-                                        bottomThreshold={50}
-                                        normalStyles={{
-                                        backgroundColor: "#999999",
-                                        padding: "2rem"
-                                        }}
-                                        stickyStyles={{
-                                        backgroundColor: "rgba(255,255,255,.8)",
-                                        padding: "2rem"
-                                        }}
-                                    >
-                                    </StickyFooter>
-                            
                         
+                            
                                 
                         </div>
+
+
+                        <div className="footer-container">
+                                <Footer/>
+                        </div>
+                        
+
                     </Grid>
                         
             

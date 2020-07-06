@@ -218,7 +218,11 @@ body{
     opacity: 1;*/
     position: relative;
     padding: 0 3%;
-    margin: auto;
+    margin:0 auto;
+    width: 100%;
+    /*display: flex;
+    flex-direction: column;
+    min-height: 100vh;*/
     
 }
 
@@ -325,6 +329,12 @@ body{
     margin: 5vh;
 
     
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;    
+    top: 100%;
 }
 
 .text-container{
@@ -815,6 +825,7 @@ body{
             }
             .icons-container{
                 width: 25%;
+                left: 300px;
             }
             .text-p{
                 font-size: 20px;
@@ -859,7 +870,7 @@ body{
             }
 
             .caster-container button, .time-container button{
-                font-size: 30px;
+                font-size: 27px;
                 width: 70%;
             }
 
@@ -884,6 +895,7 @@ body{
             }
             .icons-container{
                 width: 25%;
+                left: 500px;
             }
             .text-p{
                 font-size: 20px;
