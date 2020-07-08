@@ -19,33 +19,34 @@ class Footer extends React.Component{
                 <div className="container">
                     <div className="row">
                         
-    
+                    <h4>Visite também</h4>
                         <div className="ccl">
-                            <h4>Visite também</h4>
-                            <ul className="list-unstyled">
-                                <li>Ouro</li>
-                                <li>Platina</li>
-                                <li>Diamante</li>
-                                <li>Geral</li>
-    
-                            </ul>
-                        </div>
-    
-                        <div className="col">
-                            <h4>Nossas redes sociais </h4>
-                            <ul className="list-unstyled">
                             
-                            <li><button className="btn-pages">
-                                <a href="">< Icon  icon = {twitchIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
-                                    </button></li>
-                                <li><button className="btn-pages">
-                                <a href="">< Icon  icon = {facebookIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
-                                    </button></li>
-                                <li><button className="btn-pages" >
-                                <a href="">< Icon  icon = {instagramIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
-                                    </button></li>
+                            
+                                <a href="" id="link"><h4>Ouro</h4></a>
+                                <a href="" id="link"><h4>Platina</h4></a>
+                                <a href="" id="link"><h4>Diamante</h4></a>
+                                <a href="" id="link"><h4>Geral</h4></a>
     
-                            </ul>
+                            
+                        </div>
+
+                        <h4>Nossas redes sociais </h4>
+                        <div className="col">
+                            
+                            
+                            
+                            <button className="btn-pages">
+                                <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">< Icon  icon = {twitchIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
+                                    </button>
+                                <button className="btn-pages">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">< Icon  icon = {facebookIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
+                                    </button>
+                                <button className="btn-pages" >
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">< Icon  icon = {instagramIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
+                                    </button>
+    
+                            
                         </div>  
                         <hr/>
                         <div className="row">

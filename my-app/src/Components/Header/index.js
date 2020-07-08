@@ -65,8 +65,8 @@ class Initial extends React.Component  {
                                 <HamburgerMenu
                                     isOpen={this.state.open}
                                     menuClicked={this.handleClick.bind(this)}
-                                    width={30}
-                                    height={27}
+                                    width={25}
+                                    height={22}
                                     strokeWidth={3}
                                     rotate={0}
                                     color='white'
@@ -98,7 +98,7 @@ class Initial extends React.Component  {
                                         < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
                                         </a>
                                         <a href="https://www.twitter.com/"  target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {twitterIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
+                                        < Icon  icon = {twitterIcon} color="#FFFFFF" width="9.5vh" height="4vh"/>
                                         </a>
                                         <a href="https://www.twitch.tv/"  target="_blank" rel="noopener noreferrer">
                                         < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>

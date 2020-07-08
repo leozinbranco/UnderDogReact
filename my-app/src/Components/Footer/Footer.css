@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .main-footer{
     color: white;
     background-color: #525252;
@@ -8,42 +10,41 @@
     left: 0;
     text-align: center;
 }
-.list-unstyled ul{
-    list-style:none;
-    
-}
+
 
 .list-unstyled h4{
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.row h4{
+    font-family: 'Roboto', sans-serif;
 }
 
-.list-unstyled ul li{
-    padding: 10px;
-    margin: 10px;
+.col-sm{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(2, 1, 1, 0.5);
 }
 
-.list-unstyled li{
-    list-style:none;
-    display: inline;
-    margin: 40px;
-}
-
-.row .col-sm{
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.btn-pages{
-    padding: 20px;
-    margin: 10px;
-    display: inline;
-    text-align: center;
+.ccl{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    outline: 0;
-    background-color: #C4C4C4;
-
 }
+
+#link{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.ccl h4{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 
 .btn-pages{
     width: 43px;
@@ -51,17 +52,42 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    background-color: #C4C4C4;
+    outline: 0;
+    margin: 5px;
+    
 }
 
 .btn-pages a{
-    position: relative;
-    /*right: 18px;
-    bottom: 14px;
-    width: 20px;
-    height: 20px;*/
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+@media screen and (min-width: 1281px){
+.container h4, .row h4{
+    font-size: 20px;
+}
+
+.btn-pages button{
+    width: 50px;
+    height: 50px;
+}
+
+}
+
+@media screen and (min-width: 600px){
+
+    .container h4, .row h4{
+        font-size: 20px;
+    }
+    
+    .btn-pages button{
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    
+    
 }

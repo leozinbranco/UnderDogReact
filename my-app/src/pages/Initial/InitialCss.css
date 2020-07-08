@@ -32,9 +32,9 @@
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-.btnTeste:hover, .header-button:hover {
-    background: rgba(0, 0, 0, 0);
-    color: #5B006A;
+.btnTeste:hover{
+    background-color:  rgb(115, 0, 133);
+    color: #FFFFFF;
     box-shadow: inset 0 0 0 3px #5B006A; 
     transition: all 0.7s ease;    
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);     
@@ -261,7 +261,7 @@ body{
 .white-container{
     position: relative;
     background-color: rgba(29, 34, 41, 0.85);
-    margin: 10vh;
+    margin:6vh;
     /*opacity: 0.85;*/
     height: 90vh;
     /*width: 130%;*/
@@ -429,6 +429,7 @@ body{
         .text-p{
             font-size: 0.01rem;
             line-height: 11px;
+            text-align: left;
             width: 80%;
         } 
         .icons-container{
@@ -452,6 +453,10 @@ body{
             font-size: 5px;
         }
 
+        .caster-container p, .time-container p{
+            text-align: left;
+        }
+
         .btnTeste{
             font-size: 20px;
             text-align: center;
@@ -466,11 +471,13 @@ body{
         }
         .title-p {
             font-size: 2.5rem;
+            
         }
         .text-p{
             font-size: 18px;
             line-height: 20px;
             width: 80%;
+            text-align: left;
         }   
         body{
             background-repeat: repeat;
@@ -490,12 +497,17 @@ body{
             width: 300%;
         }
         .icons-container{
-            width: 30%;
+            width: 100%;
+            left: 70%;
+        }
+
+        .caster-container p, .time-container p{
+            text-align: left;
         }
 
         .hamburguer-icon{
             position: relative;
-            left: 50px;
+            left: 20px;
         }
 
         .grey-container{
@@ -504,6 +516,7 @@ body{
         
         .header-button{
             font-size: 17px;
+            left: 8%;
         }
         
         
@@ -516,16 +529,19 @@ body{
             background-repeat: repeat;
         }
         .title-p {
-            font-size: 4rem;
+            font-size: 5rem;
         }
         .anchor-container{
             width: 90%;
         }
         .icons-container{
-            width: 50%;
+            width: 100%;
+            left: 68%;
         }
         .text-p{
-            font-size: 24px;
+            font-size: 30px;
+            line-height: 50px;
+            text-align: left;
         }   
         
         .initial-container{
@@ -534,21 +550,26 @@ body{
         }
 
         .gray-top-text{
-            font-size: 24px;
+            font-size: 34px;
         }
 
         .form-title-container{
-            font-size: 30px;   
+            font-size: 40px;   
                      
         }
 
         .caster-container p, .time-container p{
-            font-size: 30px;
+            font-size: 40px;
+            text-align: left;
             width: 70%;
         }
 
         .under-dog-container p{
             font-size: 25px;
+        }
+
+        .header-button{
+            left: 9.5%;
         }
     }
     @media screen and  (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -563,11 +584,13 @@ body{
             font-size: 5rem;
         }
         .icons-container{
-            width: 14%;
+            width: 100%;
+            left: 75%;
         }
         .text-p{
-            font-size: 42px;
-            line-height: 40px;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: left;
         }   
         
         .gray-top-text{
@@ -580,6 +603,7 @@ body{
 
         .caster-container p, .time-container p{
             font-size: 40px;
+            text-align: left;
             width: 70%;
         }
 
@@ -589,7 +613,7 @@ body{
         }
 
         .hamburguer-icon{
-            left: 100px;
+            left: 150%;
         }
 
         .anchor-container{
@@ -601,6 +625,7 @@ body{
 
         .header-button{
             font-size: 30px;
+            left: 7.4%;
         }
  
     }
@@ -614,12 +639,14 @@ body{
             font-size: 60px ;/*7.22vh*/;
             }
             .icons-container{
-                width: 25%;
+                width: 100%;
+                left: 75%;
             }
             .text-p{
                 font-size: 50px;
                 width: 90%;
-                line-height: 60px;
+                line-height: 50px;
+                text-align: left;
             }
         
             .initial-container{
@@ -646,6 +673,7 @@ body{
     
             .caster-container p, .time-container p{
                 font-size: 50px;
+                text-align: left;
                 width: 70%;
             }
     
@@ -684,6 +712,7 @@ body{
                 font-size: 50px;
                 width: 90%;
                 line-height: 60px;
+                text-align: left;
             }
         
             .initial-container{
@@ -711,6 +740,7 @@ body{
             .caster-container p, .time-container p{
                 font-size: 50px;
                 width: 70%;
+                text-align: left;
             }
     
             .under-dog-container, .under-dog-container p{
@@ -743,15 +773,17 @@ body{
 
     
         .title-p {
-            font-size: 20px ;/*7.22vh*/;
+            font-size: 40px ;/*7.22vh*/;
             }
             .icons-container{
-                width: 25%;
+                width: 100%;
+                left: 70%;
             }
             .text-p{
-                font-size: 6px;
+                font-size: 17px;
                 width: 101%;
                 line-height: 20px;
+                text-align: left;
             }
         
             .initial-container{
@@ -763,7 +795,7 @@ body{
             }
 
             .gray-top-text{
-                font-size: 10px;
+                font-size: 15px;
             }
 
             .grey-container{
@@ -782,6 +814,7 @@ body{
             .caster-container p, .time-container p{
                 font-size: 20px;
                 width: 70%;
+                text-align: left;
             }
     
             .under-dog-container, .under-dog-container p{
@@ -790,7 +823,7 @@ body{
             }
 
             .btnTeste{
-                font-size: 10px;
+                font-size: 20px;
                 text-align: center;
             }
 
@@ -811,6 +844,7 @@ body{
 
             .header-button{
                 font-size: 10px;
+                left: 9.5%;
             }
             
     }
@@ -822,15 +856,18 @@ body{
 
         .title-p {
             font-size: 3rem ;/*7.22vh*/;
+            text-align: center;
             }
             .icons-container{
-                width: 25%;
-                left: 300px;
+                width: 100%;
+                left: 60%;
+
             }
             .text-p{
                 font-size: 20px;
                 width: 90%;
                 line-height: 30px;
+                text-align: left;
             }
         
             .initial-container{
@@ -858,6 +895,7 @@ body{
             .caster-container p, .time-container p{
                 font-size: 24px;
                 width: 70%;
+                text-align: left;
             }
     
             .under-dog-container, .under-dog-container p{
@@ -875,11 +913,12 @@ body{
             }
 
             .hamburguer-icon{
-                left: 50px;
+                left: 80%;
             }
 
             .header-button{
                 font-size: 18px;
+                left: 10%;
             }
 
             
@@ -894,13 +933,15 @@ body{
             font-size: 3rem ;/*7.22vh*/;
             }
             .icons-container{
-                width: 25%;
-                left: 500px;
+                width: 100%;
+                left: 65%;
+
             }
             .text-p{
                 font-size: 20px;
                 width: 90%;
                 line-height: 30px;
+                text-align: left;
             }
         
             .initial-container{
@@ -927,6 +968,7 @@ body{
             .caster-container p, .time-container p{
                 font-size: 30px;
                 width: 70%;
+                text-align: left;
             }
     
             .under-dog-container, .under-dog-container p{
@@ -943,12 +985,18 @@ body{
                 width: 70%;
             }
 
+          
+
             .hamburguer-icon{
-                left: 70px;
+                left: 50%;
+                width: 10px;
+                height: 10px;
+
             }
 
             .header-button{
                 font-size: 25px;
+                left: 9.1%;
             }
         }
         
@@ -960,13 +1008,17 @@ body{
             .title-p {
                 font-size: 5rem ;/*7.22vh*/;
                 }
+
+               
                 .icons-container{
-                    width: 25%;
+                    width: 100%;
+                    left: 70%;
                 }
                 .text-p{
                     font-size: 50px;
                     width: 90%;
                     line-height: 50px;
+                    text-align: left;
                 }
             
                 .initial-container{
@@ -982,8 +1034,8 @@ body{
     
                 .grey-container{
                     height: 500px;
-                    font-size: 30px;
-                    text-align: center;
+                    font-size: 35px;
+                    text-align: left;
                 }
         
                 .form-title-container{
@@ -993,6 +1045,7 @@ body{
                 .caster-container p, .time-container p{
                     font-size: 50px;
                     width: 70%;
+                    text-align: left;
                 }
         
                 .under-dog-container, .under-dog-container p{

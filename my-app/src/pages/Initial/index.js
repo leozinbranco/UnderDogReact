@@ -1,4 +1,4 @@
-import '../Initial/style.css';
+import '../Initial/InitialCss.css';
 import React/*, {useState}*/ from 'react';
 import { Tab, Tabs}from '@material-ui/core';
 import Header from '../../Components/Header';
@@ -104,6 +104,10 @@ class Initial extends React.Component  {
 
             return (
                         /**/
+
+                    <div>
+
+                    
                     <Grid behavior={BEHAVIOR.fluid}>
                     
                         <div className="initial-container" >
@@ -222,13 +226,13 @@ class Initial extends React.Component  {
                         </div>
 
 
-                        <div className="footer-container">
-                                <Footer/>
-                        </div>
                         
 
                     </Grid>
-                        
+                        <div className="footer-container">
+                                <Footer/>
+                        </div>
+                    </div>
             
                             
                                 /*
