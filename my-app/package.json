@@ -27,7 +27,8 @@
     "react-swipeable-views": "^0.13.9",
     "rodal": "^1.2.10",
     "styletron-engine-atomic": "^1.4.6",
-    "styletron-react": "^5.2.7"
+    "styletron-react": "^5.2.7",
+    "websocket-extensions": "^0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
