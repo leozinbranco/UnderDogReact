@@ -392,6 +392,7 @@ body{
 .icons-container{
     position: relative;
     left: 37%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 ;
     display: flex;
@@ -508,7 +509,7 @@ body{
             height: 100%;
         }
         .icons-container{
-            width: 100%;
+            width: 50%;
             left: 30%;
         }
 
@@ -546,7 +547,7 @@ body{
             width: 90%;
         }
         .icons-container{
-            width: 100%;
+            width: 50%;
             left: 38%;
         }
         .text-p{
@@ -596,7 +597,7 @@ body{
             font-size: 5rem;
         }
         .icons-container{
-            width: 100%;
+            width: 50%;
             left: 35%;
         }
         .text-p{
@@ -651,7 +652,7 @@ body{
             font-size: 60px ;/*7.22vh*/;
             }
             .icons-container{
-                width: 100%;
+                width: 50%;
                 left: 35%;
             }
             .text-p{
@@ -776,7 +777,7 @@ body{
             }
 
             .icons-container{
-                width: 100%;
+                width: 50%;
                 left: 30%;
 
             }
@@ -801,7 +802,7 @@ body{
             font-size: 40px ;/*7.22vh;*/
             }
             .icons-container{
-                width: 100%;
+                width: 50%;
                 left: 30%;
             }
             .text-p{
@@ -885,7 +886,7 @@ body{
             text-align: center;
             }
             .icons-container{
-                width: 100%;
+                width: 50%;
                 left: 30%;
 
             }
@@ -961,7 +962,7 @@ body{
             font-size: 3rem ;/*7.22vh*/;
             }
             .icons-container{
-                width: 100%;
+                width: 50%;
                 left: 35%;
 
             }
@@ -1040,7 +1041,7 @@ body{
 
                
                 .icons-container{
-                    width: 100%;
+                    width: 50%;
                     left: 30%;
                 }
                 .text-p{
