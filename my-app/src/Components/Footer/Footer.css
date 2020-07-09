@@ -4,12 +4,13 @@
     color: white;
     background-color: #525252;
     position: absolute;
-    
-    width: 100%;
-    top: 320%;
-    left: 0;
+    bottom: -400px;
+    left: -10px;
+    width: 101.15%;
     text-align: center;
 }
+
+
 
 
 .list-unstyled h4{
@@ -75,6 +76,8 @@
 }
 
 }
+
+
 
 @media screen and (min-width: 600px){
 

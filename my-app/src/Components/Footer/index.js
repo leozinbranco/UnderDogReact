@@ -14,8 +14,8 @@ class Footer extends React.Component{
         return(
            
 
-
-            <div className="main-footer">
+            
+            <footer className="main-footer">
                 <div className="container">
                     <div className="row">
                         
@@ -23,10 +23,10 @@ class Footer extends React.Component{
                         <div className="ccl">
                             
                             
-                                <a href="" id="link"><h4>Ouro</h4></a>
-                                <a href="" id="link"><h4>Platina</h4></a>
-                                <a href="" id="link"><h4>Diamante</h4></a>
-                                <a href="" id="link"><h4>Geral</h4></a>
+                                <a href="/" id="link"><h4>Ouro</h4></a>
+                                <a href="/" id="link"><h4>Platina</h4></a>
+                                <a href="/" id="link"><h4>Diamante</h4></a>
+                                <a href="/" id="link"><h4>Geral</h4></a>
     
                             
                         </div>
@@ -58,7 +58,7 @@ class Footer extends React.Component{
                         </div>
                     </div>  
                 </div>
-            </div>
+            </footer>
         )
 
     }

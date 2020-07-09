@@ -231,7 +231,7 @@ class Initial extends React.Component  {
                     </Grid>
                         <div className="footer-container">
                                 <Footer/>
-                        </div>
+                                </div>
                     </div>
             
                             
