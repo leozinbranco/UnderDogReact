@@ -88,10 +88,11 @@ class Initial extends React.Component  {
                                     
 
 
-                                    <div className="under-dog-container" onClick={this.scrollToTop} >
-                                            <img alt="Logo" src={udgEdited}/>
-                                            <p>Underdog Gaming </p>
-                                            
+                                    <div className="under-dog-container" >
+                                        
+                                            <img alt="Logo" src={udgEdited} onClick={this.scrollToTop}/>
+                                            <p onClick={this.scrollToTop}>Underdog Gaming </p>
+                                        
                                     </div>
                                     <div className="icons-container"> 
                                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">

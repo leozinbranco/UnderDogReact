@@ -156,9 +156,10 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 60%;
+    height: 100%;
     width: 100%;
     cursor: pointer;
+    z-index: 1;
     
 
 }
@@ -399,7 +400,7 @@ body{
     padding: 0 ;
     display: flex;
     flex-direction: row;
-    
+    z-index: 0;
 }
 
 .hamburguer-button{
@@ -476,12 +477,6 @@ body{
             
         }
 
-        .under-dog-container{
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 49%;
-        }
-
         .btnTeste{
             font-size: 20px;
             text-align: center;
@@ -524,11 +519,7 @@ body{
             height: 100%;
         }
         
-        .under-dog-container{
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 49%;
-        }
+       
         .white-container{
             width: 100%;
             
@@ -548,6 +539,7 @@ body{
         } 
         .icons-container{
             width: 40%;
+            
         }
 
         .hamburguer-icon{
@@ -594,11 +586,7 @@ body{
         }
  
         
-        .under-dog-container{
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 49%;
-        }
+    
         .text-p{
             font-size: 18px;
             line-height: 20px;
@@ -608,9 +596,9 @@ body{
         body{
             background-repeat: repeat;
         }
-        .under-dog-container p{
-            font-size: 18px;
-            
+        .under-dog-container, .under-dog-container p{
+            font-size: 20px;
+            width: auto;
         }
         .anchor-container{
             width: 90%;
@@ -666,11 +654,7 @@ body{
             left: 38%;
         }
         
-        .under-dog-container{
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 49%;
-        }
+        
         .text-p{
             font-size: 20px;
             line-height: 30px;
@@ -697,8 +681,9 @@ body{
             width: 70%;
         }
 
-        .under-dog-container p{
-            font-size: 25px;
+        .under-dog-container, .under-dog-container p{
+            font-size: 40px;
+            width: auto;
         }
 
         .white-container{
@@ -720,11 +705,7 @@ body{
             height: 100%;
         }
         
-        .under-dog-container{
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 49%;
-        }
+        
         .title-p {
             font-size: 5rem;
         }
@@ -791,11 +772,7 @@ body{
                 left: 35%;
             }
             
-        .under-dog-container{
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 49%;
-        }
+        
         .white-container{
             margin-top: 10%;
         }
@@ -908,11 +885,7 @@ body{
                 width: auto;
             }
             
-            .under-dog-container{
-                top: 50%;
-                transform: translate(-50%, -50%);
-                left: 49%;
-            }
+            
 
             .anchor-container{
                 width: 90%;
@@ -1000,11 +973,7 @@ body{
                 width: auto;
             }
             
-            .under-dog-container{
-                top: 50%;
-                transform: translate(-50%, -50%);
-                left: 49%;
-            }
+            
 
             .btnTeste{
                 font-size: 30px;
@@ -1052,11 +1021,6 @@ body{
                 width: 100%;
             }
             
-            .under-dog-container{
-                top: 50%;
-                transform: translate(-50%, -50%);
-                left: 49%;
-            }
             
             .anchor-container{
                 width: 90%;
@@ -1143,11 +1107,7 @@ body{
                     
                 }
                 
-            .under-dog-container{
-                top: 50%;
-                transform: translate(-50%, -50%);
-                left: 49%;
-            }
+            
     
                 .grey-container{
                     height: 500px;
