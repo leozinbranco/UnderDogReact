@@ -179,7 +179,7 @@ class Initial extends React.Component  {
                                             </div>
 
                                             <div className="grey-container" style={Object.assign({}, styles.slide)} >
-                                            lalalalalal
+                                            A terceira etapa será composta de semi-final e terceiro lugar disputados por MD3 e a grande final em MD5.
                                             </div>
                 
 

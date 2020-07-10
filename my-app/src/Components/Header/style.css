@@ -61,10 +61,15 @@
 
 }
 
-.icons-container{
+.icons-container a{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 5%;
+}
+
+.icons-container{
+    padding-left: 25%;
 }
 
 @media (max-width:320px) {

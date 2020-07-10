@@ -28,10 +28,12 @@
     color: rgba(2, 1, 1, 0.5);
 }
 
-.ccl{
+.ccl, .ccl a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-right: 65px;
+    margin-left: 60px;
 }
 
 #link{
@@ -47,23 +49,6 @@
 
 
 
-.btn-pages{
-    width: 43px;
-    height: 43px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    background-color: #C4C4C4;
-    outline: 0;
-    margin: 5px;
-    
-}
-
-.btn-pages a{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 
 @media screen and (orientation: landscape){
     .main-footer{

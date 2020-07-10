@@ -1,9 +1,9 @@
 import './style.css';
 import React/*, {useState}*/ from 'react';
-import { Icon } from "@iconify/react";
-import twitchIcon from '@iconify/icons-mdi/twitch';
-import twitterIcon from '@iconify/icons-mdi/twitter';
-import facebookIcon from '@iconify/icons-cib/facebook';
+//import { Icon } from "@iconify/react";
+import twitchIcon from '../../assets/twitchIconHeader.png';
+import twitterIcon from '../../assets/twitterIconHeader.png';
+import facebookIcon from '../../assets/fbIconHeader.png';
 import udgEdited from '../../assets/UDGedited.png';
 import ComponentMenu from '../Drawer';
 import HamburgerMenu from 'react-hamburger-menu';
@@ -95,13 +95,13 @@ class Initial extends React.Component  {
                                     </div>
                                     <div className="icons-container"> 
                                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {facebookIcon} color="#FFFFFF" width="9vh" height="3.9vh" className="testeIcon"/>
+                                        < img   src = {facebookIcon} alt="Facebook" />
                                         </a>
                                         <a href="https://www.twitter.com/"  target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {twitterIcon} color="#FFFFFF" width="9.5vh" height="4vh"/>
+                                        < img   src = {twitterIcon} alt="Twitter" />
                                         </a>
                                         <a href="https://www.twitch.tv/"  target="_blank" rel="noopener noreferrer">
-                                        < Icon  icon = {twitchIcon} color="#FFFFFF" width="9vh" height="3.9vh"/>
+                                        < img   src = {twitchIcon} alt="Twitch" />
                                         </a>
                                     </div>
                                         

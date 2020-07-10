@@ -12,7 +12,7 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>        
                 <Route path="/" exact component={Initial}/>
-                <Route component={() => <div>Page 404!</div>}/>
+                <Route component={() => <div style={{color:'#FFFF'}}>Page 404!</div>}/>
             </Switch>
         </BrowserRouter>
     );

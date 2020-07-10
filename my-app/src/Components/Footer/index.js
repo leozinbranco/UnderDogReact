@@ -1,9 +1,8 @@
 import React from 'react';
-import twitchIcon from '@iconify/icons-mdi/twitch';
-import instagramIcon from '@iconify/icons-mdi/instagram';
-import facebookIcon from '@iconify/icons-cib/facebook';
-import { Icon } from "@iconify/react";
 import './Footer.css';
+import twitchIcon from '../../assets/twitchIcon.png';
+import facebookIcon from '../../assets/facebookIcon.png';
+import igIcon from '../../assets/instagramIcon.png';
 
 class Footer extends React.Component{
 
@@ -22,7 +21,7 @@ class Footer extends React.Component{
                     <h4>Visite também</h4>
                         <div className="ccl">
                             
-                            
+                                <a href="/" id="link"><h4>Nossa Loja</h4></a>
                                 <a href="/" id="link"><h4>Ouro</h4></a>
                                 <a href="/" id="link"><h4>Platina</h4></a>
                                 <a href="/" id="link"><h4>Diamante</h4></a>
@@ -34,17 +33,14 @@ class Footer extends React.Component{
                         <h4>Nossas redes sociais </h4>
                         <div className="col">
                             
-                            
-                            
-                            <button className="btn-pages">
-                                <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">< Icon  icon = {twitchIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
-                                    </button>
-                                <button className="btn-pages">
-                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">< Icon  icon = {facebookIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
-                                    </button>
-                                <button className="btn-pages" >
-                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">< Icon  icon = {instagramIcon} color="#000" width="5vh" height="3.9vh" className="icons"/></a>
-                                    </button>
+                                <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">< img src={twitchIcon} alt="Twitch"/></a>
+                                    
+                                
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">< img src={facebookIcon} alt="Facebook"/></a>
+                                   
+                                
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">< img src={igIcon} alt="Instagram"/></a>
+                                    
     
                             
                         </div>  

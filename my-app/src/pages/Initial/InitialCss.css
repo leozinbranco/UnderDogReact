@@ -143,8 +143,9 @@
 .under-dog-container{
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    left: 49%;
+    
     color: #FFFFFF;
     font-family: 'Sarpanch', sans-serif;
     font-style: normal;
@@ -152,10 +153,11 @@
     font-size: 24px;
     line-height: 34px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     height: 60%;
-    width: 20%;
+    width: 100%;
     cursor: pointer;
     
 
@@ -412,6 +414,100 @@ body{
     flex-direction: row;
 }
 
+@media screen and (orientation: landscape){ /* tablet, landscape iPad, lo-res laptops ands desktops */
+    body{
+        overflow: scroll;
+    }
+
+    html{
+        width: 100%;
+    }
+
+
+    .title-p {
+        font-size: 40px ;/*7.22vh;*/
+        }
+        .icons-container{
+            width: 50%;
+            left: 30%;
+        }
+        .text-p{
+            font-size: 17px;
+            width: 101%;
+            line-height: 20px;
+            text-align: left;
+        }
+    
+        .initial-container{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .initial-container header{
+            height: 40px;
+        }
+
+        .gray-top-text{
+            font-size: 15px;
+        }
+
+        .grey-container{
+            height: 100px;
+            font-size: 15px;
+        }
+
+        .anchor-container{
+            width: 500px;
+        }
+
+        .form-title-container{
+            font-size: 20px;   
+        }
+
+        .caster-container p, .time-container p{
+            font-size: 20px;
+            width: 70%;
+            text-align: left;
+        }
+
+        .under-dog-container, .under-dog-container p{
+            font-size: 10px;
+            width: auto;
+            
+        }
+
+        .under-dog-container{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
+        }
+
+        .btnTeste{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .caster-container button, .time-container button{
+            font-size: 20px;
+            width: 70%;
+        }
+
+        .hamburguer-icon{
+            left: 10px;
+            
+        }
+        .anchor-container{
+            width: 90%;
+        }
+   
+
+
+        .header-button{
+            font-size: 10px;
+            left: 9.5%;
+        }
+        
+}
 
     @media screen and (max-width:320px) {
 
@@ -427,8 +523,15 @@ body{
             width: 100%;
             height: 100%;
         }
+        
+        .under-dog-container{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
+        }
         .white-container{
             width: 100%;
+            
         }
         .anchor-container{
             width: 90%;
@@ -472,6 +575,8 @@ body{
             font-size: 20px;
             text-align: center;
         }
+        
+ 
     }
 
     @media screen and  (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
@@ -483,6 +588,16 @@ body{
         .title-p {
             font-size: 2.5rem;
             
+        }
+        .white-container{
+            margin-top: 10%;
+        }
+ 
+        
+        .under-dog-container{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
         }
         .text-p{
             font-size: 18px;
@@ -550,6 +665,12 @@ body{
             width: 50%;
             left: 38%;
         }
+        
+        .under-dog-container{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
+        }
         .text-p{
             font-size: 20px;
             line-height: 30px;
@@ -580,6 +701,11 @@ body{
             font-size: 25px;
         }
 
+        .white-container{
+            margin-top: 8;
+        }
+ 
+
         .header-button{
             left: 9.5%;
         }
@@ -592,6 +718,12 @@ body{
         .initial-container{
             width: 100%;
             height: 100%;
+        }
+        
+        .under-dog-container{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
         }
         .title-p {
             font-size: 5rem;
@@ -640,6 +772,9 @@ body{
             font-size: 30px;
             left: 7.4%;
         }
+        .white-container{
+            margin-top: 10%;
+        }
  
     }
 
@@ -655,6 +790,16 @@ body{
                 width: 50%;
                 left: 35%;
             }
+            
+        .under-dog-container{
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
+        }
+        .white-container{
+            margin-top: 10%;
+        }
+ 
             .text-p{
                 font-size: 50px;
                 width: 90%;
@@ -762,6 +907,12 @@ body{
                 font-size: 40px;
                 width: auto;
             }
+            
+            .under-dog-container{
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 49%;
+            }
 
             .anchor-container{
                 width: 90%;
@@ -782,99 +933,17 @@ body{
 
             }
 
+            .white-container{
+                margin-top: 5%;
+            }
+
             .header-button{
                 left: 10%;
             }
             
     }
 
-    @media screen and (orientation: landscape){ /* tablet, landscape iPad, lo-res laptops ands desktops */
-        body{
-            overflow: scroll;
-        }
-
-        html{
-            width: 100%;
-        }
-
     
-        .title-p {
-            font-size: 40px ;/*7.22vh;*/
-            }
-            .icons-container{
-                width: 50%;
-                left: 30%;
-            }
-            .text-p{
-                font-size: 17px;
-                width: 101%;
-                line-height: 20px;
-                text-align: left;
-            }
-        
-            .initial-container{
-                width: 100%;
-                height: 100%;
-            }
-            
-            .initial-container header{
-                height: 40px;
-            }
-
-            .gray-top-text{
-                font-size: 15px;
-            }
-
-            .grey-container{
-                height: 100px;
-                font-size: 15px;
-            }
-
-            .anchor-container{
-                width: 500px;
-            }
-    
-            .form-title-container{
-                font-size: 20px;   
-            }
-    
-            .caster-container p, .time-container p{
-                font-size: 20px;
-                width: 70%;
-                text-align: left;
-            }
-    
-            .under-dog-container, .under-dog-container p{
-                font-size: 10px;
-                width: auto;
-            }
-
-            .btnTeste{
-                font-size: 20px;
-                text-align: center;
-            }
-
-            .caster-container button, .time-container button{
-                font-size: 20px;
-                width: 70%;
-            }
-
-            .hamburguer-icon{
-                left: 10px;
-                
-            }
-            .anchor-container{
-                width: 90%;
-            }
-       
-
-
-            .header-button{
-                font-size: 10px;
-                left: 9.5%;
-            }
-            
-    }
 
     @media screen and (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
         html{
@@ -930,6 +999,12 @@ body{
                 font-size: 24px;
                 width: auto;
             }
+            
+            .under-dog-container{
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 49%;
+            }
 
             .btnTeste{
                 font-size: 30px;
@@ -975,6 +1050,12 @@ body{
         
             .initial-container{
                 width: 100%;
+            }
+            
+            .under-dog-container{
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 49%;
             }
             
             .anchor-container{
@@ -1061,6 +1142,12 @@ body{
                     
                     
                 }
+                
+            .under-dog-container{
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 49%;
+            }
     
                 .grey-container{
                     height: 500px;
@@ -1079,7 +1166,7 @@ body{
                 }
         
                 .under-dog-container, .under-dog-container p{
-                    font-size: 30px;
+                    font-size: 35px;
                     width: auto;
                 }
     
