@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {StatefulMenu, OptionProfile} from 'baseui/menu';
-import gold from '../../assets/gold.png';
+import gold from '../../assets/dogo_ouro.png';
+import dima from '../../assets/dogo_diam.png';
+import plat from '../../assets/dogo_plat.png';
+import all from '../../assets/dogo_all.png';
 
     /*const ITEMS = Array.from({length: 4}, () => ({
         
@@ -20,24 +23,25 @@ import gold from '../../assets/gold.png';
         href: '/gold',
     },
     {
-        title: 'Tier Diamante',
-        subtitle: 'Diamante',
+        title: 'Tier Platina',
+        subtitle: 'Platina',
         body: 'Clique para ir a página!',
-        imgUrl: gold,
-        href: '/diamante',
-    },
-    {
-        title: 'Tier Bronze',
-        subtitle: 'Bronze',
-        body: 'Clique para ir a página!',
-        imgUrl: gold,
+        imgUrl: plat,
         href: '/bronze',
     },
     {
-        title: 'Tier Platina',
-        subtitle: 'Bronze',
+        
+        title: 'Tier Diamante',
+        subtitle: 'Diamante',
         body: 'Clique para ir a página!',
-        imgUrl: gold,
+        imgUrl: dima,
+        href: '/diamante',
+    },
+    {
+        title: 'Geral',
+        subtitle: 'Geral',
+        body: 'Clique para ir a página!',
+        imgUrl: all,
         href: '/dark',
     }];
 
