@@ -1000,6 +1000,10 @@ body{
         html{
             width: 99.7%;
             height: 100%;
+            
+        }
+        body{
+            overflow-x: hidden;
         }
 
         .title-p {

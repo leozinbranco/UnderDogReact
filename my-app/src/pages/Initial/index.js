@@ -105,7 +105,7 @@ class Initial extends React.Component  {
             return (
                         /**/
 
-                    <div>
+                    <div >
 
                     
                     <Grid behavior={BEHAVIOR.fluid}>
